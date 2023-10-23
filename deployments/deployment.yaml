@@ -18,6 +18,6 @@ spec:
     spec: 
       containers:
         - name: bmi-react
-          image: 120402502253.dkr.ecr.eu-central-1.amazonaws.com/ecr-private:main
+          image: '120402502253.dkr.ecr.eu-central-1.amazonaws.com/ecr-private:main'
           ports: 
             - containerPort: 80 
