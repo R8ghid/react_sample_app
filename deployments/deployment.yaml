@@ -16,6 +16,8 @@ spec:
         app: bmi-react
 
     spec: 
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
         - name: bmi-react
           image: '120402502253.dkr.ecr.eu-central-1.amazonaws.com/ecr-private:main'
