@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bmi-react 
+  namespace: argocd 
+  labels:
+    app: BMI-react 
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: bmi-react
+  template: 
+    metadata:
+      labels:
+        app: bmi-react
+
+    spec: 
+      containers:
+        - name: bmi-react
+          image: 120402502253.dkr.ecr.eu-central-1.amazonaws.com/ecr-private:main
+          ports: 
+            - containerPort: 80 
