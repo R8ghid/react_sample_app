@@ -8,6 +8,6 @@ spec:
     app: bmi-react
   ports:
     - protocol: TCP
-      port: 33333
-      targetPort: 31222
-  type: NodePort
+      port: 3000
+      targetPort: 80
+  
