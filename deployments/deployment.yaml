@@ -16,7 +16,7 @@ spec:
         app: bmi-react
 
     spec: 
-      serviceAccountName: ecr-service-account
+      # serviceAccountName: ecr-service-account
       imagePullSecrets:
         - name: my-ecr-secret
       containers:
